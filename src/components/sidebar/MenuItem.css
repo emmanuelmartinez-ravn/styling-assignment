@@ -1,0 +1,21 @@
+span {
+  font-size: 10px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  border: #858a9d solid 1px;
+}
+
+.menu-item {
+  color: #858a9d;
+}
+
+.selected {
+  color: #ffffff;
+}
+
+.selected .icon {
+  border: #ffffff solid 2px;
+}
