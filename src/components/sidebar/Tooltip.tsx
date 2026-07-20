@@ -1,3 +1,4 @@
+import { Fragment } from "react/jsx-runtime";
 import "./Tooltip.css";
 export type TooltipItemProp = {
   id: string;
@@ -8,12 +9,10 @@ const Tooltip = ({ items }: { items: TooltipItemProp[] }) => {
   return (
     <div className="tooltip">
       {items.map((item) => (
-        <>
+        <Fragment key={item.id}>
           <div className="icon"></div>
-          <span className="tooltip-text" key={item.id}>
-            {item.name}
-          </span>
-        </>
+          <span className="tooltip-text">{item.name}</span>
+        </Fragment>
       ))}
     </div>
   );

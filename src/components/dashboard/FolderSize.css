@@ -1,0 +1,49 @@
+.folder-size {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 2rem;
+}
+
+.folder-row {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--row-border-color, #e0e7f1);
+}
+
+.folder-row:last-child {
+  border-bottom: none;
+}
+
+.color {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.name {
+  font-size: 12px;
+  color: #343951;
+}
+
+.files {
+  font-size: 10px;
+  color: #858a9d;
+}
+
+.size-badge {
+  justify-self: end;
+  font-size: 12px;
+  color: #343951;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
