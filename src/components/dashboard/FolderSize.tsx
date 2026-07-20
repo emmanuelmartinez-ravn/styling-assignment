@@ -13,10 +13,13 @@ const FolderSize = ({ data }: { data: FolderData[] }) => {
     <div className="folder-size">
       {data.map((folder) => (
         <div className="folder-row" key={folder.id}>
-          <div className="color" style={{ background: folder.color }}></div>
-          <div className="info">
-            <span className="name">{folder.name}</span>
-            <span className="files">{folder.files} files</span>
+          <div
+            className="folder-color"
+            style={{ background: folder.color }}
+          ></div>
+          <div className="folder-info">
+            <span className="folder-name">{folder.name}</span>
+            <span className="folder-files">{folder.files} files</span>
           </div>
 
           <span className="size-badge">{folder.size} GB</span>

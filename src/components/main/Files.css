@@ -1,0 +1,48 @@
+.files {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+h2 {
+  color: #343951;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.title button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  padding: 0;
+  color: #343951;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.title button:hover {
+  text-decoration: underline;
+}
+
+.headers {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 40px;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+
+.headers span {
+  font-size: 14px;
+  color: #858a9d;
+}

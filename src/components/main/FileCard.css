@@ -1,0 +1,48 @@
+.file-card {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 40px;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.file-name {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #343951;
+}
+
+.file-icon {
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.file-name span {
+  color: #343951;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.file-card > span {
+  font-size: 14px;
+  color: #858a9d;
+}
+
+.file-menu-icon {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  justify-self: center;
+  box-shadow:
+    -6px 0 0 #c4c4c4,
+    6px 0 0 #c4c4c4;
+}

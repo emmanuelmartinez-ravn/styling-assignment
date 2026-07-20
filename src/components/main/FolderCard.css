@@ -1,0 +1,91 @@
+.folder-card {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  box-shadow:
+    0 6px 0 #c4c4c4,
+    0 12px 0 #c4c4c4;
+}
+
+.folder-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.folder-icon::before,
+.folder-icon::after {
+  content: "";
+  position: absolute;
+}
+
+.folder-icon::before {
+  width: 36px;
+  height: 32px;
+  background: #ffd999;
+  bottom: 0;
+  left: 0;
+}
+
+.folder-icon::after {
+  width: 36px;
+  height: 32px;
+  background: #ff9f00;
+  top: 0;
+  left: 8px;
+}
+
+.collaborators {
+  position: absolute;
+  top: 2rem;
+  left: 6rem;
+  display: flex;
+}
+
+.collaborator-circle {
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #bec0c8;
+  border-radius: 50%;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.collaborator-circle:not(:first-child) {
+  margin-left: -14px;
+}
+
+.folder-card h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 18px;
+  font-weight: 200;
+  color: #343951;
+}
+
+.folder-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #858a9d;
+}

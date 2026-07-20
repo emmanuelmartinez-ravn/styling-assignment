@@ -17,24 +17,24 @@
   border-bottom: none;
 }
 
-.color {
+.folder-color {
   width: 35px;
   height: 35px;
   border-radius: 10px;
 }
 
-.info {
+.folder-info {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.name {
+.folder-name {
   font-size: 12px;
   color: #343951;
 }
 
-.files {
+.folder-files {
   font-size: 10px;
   color: #858a9d;
 }
