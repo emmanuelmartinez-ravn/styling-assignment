@@ -1,14 +1,5 @@
-span {
-  font-size: 10px;
-}
-
-.icon {
-  width: 15px;
-  height: 15px;
-  border: #858a9d solid 1px;
-}
-
 .menu-item {
+  display: contents;
   color: #858a9d;
 }
 
@@ -17,5 +8,29 @@ span {
 }
 
 .selected .icon {
-  border: #ffffff solid 2px;
+  border: #ffffff solid 1px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  border: #858a9d solid 1px;
+}
+
+span {
+  font-size: 16px;
+}
+
+.selector {
+  width: 7px;
+  height: 31px;
+  border-right: 1px solid #ffffff;
+  background: #ffffff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  visibility: hidden;
+}
+
+.selector.selected {
+  visibility: visible;
 }

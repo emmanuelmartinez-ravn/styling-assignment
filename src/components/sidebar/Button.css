@@ -1,0 +1,20 @@
+.button {
+  background: #ff9f00;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 5px 5px 5px 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  width: 100%;
+}
+
+.button span:first-child {
+  justify-self: start;
+}
+
+.plus {
+  background: #ffb233;
+  padding: 9px 14px;
+  border-radius: 7px;
+}

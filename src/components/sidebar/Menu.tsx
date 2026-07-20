@@ -1,20 +1,30 @@
 import "./Menu.css";
 import MenuItem from "./MenuItem.tsx";
-import type { MenuItemProps } from "./MenuItem.tsx";
+import type { MenuItemData } from "./MenuItem.tsx";
+
+import { useState } from "react";
+
+const menuItems: MenuItemData[] = [
+  { id: "1", name: "Home" },
+  { id: "2", name: "My Files" },
+  { id: "3", name: "Recent Files" },
+  { id: "4", name: "Shared Files" },
+  { id: "5", name: "File Request" },
+  { id: "6", name: "Trash" },
+];
 
 const Menu = () => {
-  const menuItems: MenuItemProps[] = [
-    { id: "1", name: "Home", selected: true },
-    { id: "2", name: "My Files", selected: false },
-    { id: "3", name: "Recent Files", selected: false },
-    { id: "4", name: "Shared Files", selected: false },
-    { id: "5", name: "File Request", selected: false },
-    { id: "6", name: "Trash", selected: false },
-  ];
+  const [selectedId, setSelectedId] = useState<string>("1");
+
   return (
     <div className="menu">
       {menuItems.map((item) => (
-        <MenuItem item={item} key={item.id} />
+        <MenuItem
+          item={item}
+          key={item.id}
+          selected={item.id === selectedId}
+          onSelect={setSelectedId}
+        />
       ))}
     </div>
   );

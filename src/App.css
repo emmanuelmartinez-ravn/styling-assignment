@@ -1,4 +1,5 @@
 .app {
   display: grid;
-  grid-template-columns: 1fr 3.27fr 1.47fr;
+  grid-template-columns: 0.8fr 3.27fr 1.47fr;
+  min-height: 100vh;
 }
