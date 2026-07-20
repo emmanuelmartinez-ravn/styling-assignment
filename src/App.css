@@ -2,4 +2,5 @@
   display: grid;
   grid-template-columns: 0.3fr auto 0.4fr;
   min-height: 100vh;
+  overflow: hidden;
 }
