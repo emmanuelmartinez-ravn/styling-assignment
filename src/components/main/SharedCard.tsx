@@ -29,7 +29,7 @@ const SharedCard = ({
           {collaborators.map((collaborator, index) => (
             <div
               key={collaborator.id}
-              className="collaborator-circle"
+              className="shared-collaborator-circle"
               style={{
                 borderColor: collaborator.color,
                 zIndex: index + 1,

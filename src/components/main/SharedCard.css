@@ -27,7 +27,7 @@
   transform: translateX(80%);
 }
 
-.collaborator-circle {
+.shared-collaborator-circle {
   box-sizing: border-box;
   width: 32px;
   height: 32px;
@@ -36,7 +36,7 @@
   background: #ffffff;
 }
 
-.collaborator-circle:not(:first-child) {
+.shared-collaborator-circle:not(:first-child) {
   margin-left: -14px;
 }
 
