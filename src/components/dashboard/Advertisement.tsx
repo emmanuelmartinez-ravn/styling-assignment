@@ -3,9 +3,9 @@ const Advertisement = () => {
   return (
     <div className="advertisement">
       <div className="image"></div>
-      <span className="ad-title">Buy more space now!</span>
-      <p className="ad-description">Upgrade to cloud premium</p>
-      <button className="ad-button">Upgrade Account!</button>
+      <span className="adver-title">Buy more space now!</span>
+      <p className="adver-description">Upgrade to cloud premium</p>
+      <button className="adver-button">Upgrade Account!</button>
     </div>
   );
 };

@@ -17,18 +17,18 @@
   margin-bottom: 2rem;
 }
 
-.ad-title {
+.adver-title {
   font-size: 16px;
   color: #343951;
 }
 
-.ad-description {
+.adver-description {
   font-size: 12px;
   color: #858a9d;
   margin-bottom: 1.5rem;
 }
 
-.ad-button {
+.adver-button {
   background: #ff9f00;
   border-radius: 8px;
   padding: 1rem 2rem;
