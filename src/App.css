@@ -1,6 +1,15 @@
 .app {
   display: grid;
-  grid-template-columns: 0.3fr auto 0.4fr;
-  min-height: 100vh;
-  overflow: hidden;
+  grid-template-columns: 0.3fr 1fr 0.4fr;
+  height: 100vh;
+}
+
+.sidebar,
+.dashboard {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.home {
+  overflow-y: auto;
 }
